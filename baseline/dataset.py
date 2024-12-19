@@ -26,7 +26,7 @@ TEMPLATES = {
         "1. conflict: instances where the summary presents direct contraction or opposition to the original news;\n"
         "2. baseless info: instances where the generated summary includes information which is not substantiated by or inferred from the original news. \n"
         "Then, compile the labeled hallucinated spans into a JSON dict, with a key \"hallucination list\" and its value is a list of hallucinated spans. If there exist potential hallucinations, the output should be in the following JSON format: {{\"hallucination list\": [hallucination span1, hallucination span2, ...]}}. Otherwise, leave the value as a empty list as following: {{\"hallucination list\": []}}.\n"
-        "Output:"
+        "Your output must start like this JSON format: {{\"hallucination list\": []}} or like this: {{\"hallucination list\": [hallucination span1, hallucination span2, ...]}}.\nOutput:"
     ),
     "Summary": (
         "Below is the original news:\n" 
@@ -37,7 +37,7 @@ TEMPLATES = {
         "1. conflict: instances where the summary presents direct contraction or opposition to the original news;\n"
         "2. baseless info: instances where the generated summary includes information which is not substantiated by or inferred from the original news. \n"
         "Then, compile the labeled hallucinated spans into a JSON dict, with a key \"hallucination list\" and its value is a list of hallucinated spans. If there exist potential hallucinations, the output should be in the following JSON format: {{\"hallucination list\": [hallucination span1, hallucination span2, ...]}}. Otherwise, leave the value as a empty list as following: {{\"hallucination list\": []}}.\n"
-        "Output:"
+        "Your output must start like this JSON format: {{\"hallucination list\": []}} or like this: {{\"hallucination list\": [hallucination span1, hallucination span2, ...]}}.\nOutput:"
     ),
     "Data2txt": (
         "Below is a structured data in the JSON format:\n"
@@ -48,7 +48,7 @@ TEMPLATES = {
         "1. conflict: instances where the summary presents direct contraction or opposition to the original news;\n"
         "2. baseless info: instances where the generated summary includes information which is not substantiated by or inferred from the original news. \n"
         "Then, compile the labeled hallucinated spans into a JSON dict, with a key \"hallucination list\" and its value is a list of hallucinated spans. If there exist potential hallucinations, the output should be in the following JSON format: {{\"hallucination list\": [hallucination span1, hallucination span2, ...]}}. Otherwise, leave the value as a empty list as following: {{\"hallucination list\": []}}.\n"
-        "Output:"
+        "Your output must start like this JSON format: {{\"hallucination list\": []}} or like this: {{\"hallucination list\": [hallucination span1, hallucination span2, ...]}}.\nOutput:"
     ),
 }
 

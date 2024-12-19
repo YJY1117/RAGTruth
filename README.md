@@ -1,6 +1,11 @@
 # RAGTruth
 ![](image/fig1.jpg)
 
+# New Version of Junyu Ye for AIAA 5047
+
+All files modied after Dec 17 are my local costomed codes. Files start with "Junyu_Ye_" are my original files. My work mainly focus on ./baseline. More details please see my project pdf.
+
+# Original Version
 RAGTruth is a word-level hallucination corpus in various tasks within the Retrieval-augmented generation (RAG) setting both for **training** and **evaluating**.
 
 RAG has become a main technique for alleviating hallucinations in large language models (LLMs). Despite the integration of RAG, LLMs may still present unsupported or contradictory claims to the retrieved contents. In order to develop effective hallucination prevention strategies under RAG, it is important to create benchmark datasets that can measure the extent of hallucination. RAGTruth comprises nearly 18,000 naturally generated responses from diverse LLMs using RAG. These responses have undergone meticulous manual annotations at both the individual cases and word levels, incorporating evaluations of hallucination intensity.

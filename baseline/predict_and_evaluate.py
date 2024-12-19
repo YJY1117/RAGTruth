@@ -53,9 +53,14 @@ async def generate_response(data, sem, pbar):
                 answer = answer.strip()
                 answer = json.loads(answer)
                 break
-        except:
+        # except:
+        #     print(input_prompt)
+        #     print(answer.strip())
+        #     continue
+        except Exception as e:
+            print(f"=====================Error occurred: {e}")
             print(input_prompt)
-            print(answer.strip())
+            print(answer.strip())  # 此时 answer 已被初始化为空字符串
             continue
     ret = dict(data)
     ret['pred'] = answer
